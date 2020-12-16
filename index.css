@@ -4,3 +4,28 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 500;
 }
+
+#img-1, #img-2, #img-3, #img-4, #img-5 {
+    border-radius: 50%;
+}
+
+.daniel{
+    display: flex;
+}
+
+h2, h3 {
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.subject{
+    font-weight: 600;
+}
+
+.section1{
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+
