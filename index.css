@@ -9,7 +9,7 @@ body {
     border-radius: 50%;
 }
 
-.daniel{
+.daniel, .jonathan, .jeanette, .patrick, .kira{
     display: flex;
 }
 
@@ -22,10 +22,73 @@ h2, h3 {
     font-weight: 600;
 }
 
-.section1{
-    width: 500px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: blueviolet;
+body{
+    background-color: hsl(0, 0%, 81%);
 }
 
+.container{
+    
+    margin: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "header header okay advert"
+    "footer section section advert";
+    grid-gap: 25px;
+    
+}
+
+.section1{
+    grid-area: header;
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+    background-color: hsl(263, 55%, 52%);
+    box-shadow: 5px 10px 10px hsl(0, 0%, 81%);
+}
+
+.section2{
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.section3{
+    padding: 30px;
+    
+    border-radius: 10px;
+    background-color: white;
+}
+
+.section4{
+    padding: 30px;
+    grid-area: section;
+    margin-left: 0;
+    color: white;
+    border-radius: 10px;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.section5{
+    grid-area: advert;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+#subject{
+    font-weight: 600;
+    font-size: large;
+}
+
+@media(max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+}
